@@ -1,0 +1,166 @@
+body {
+  background: linear-gradient(135deg, #74ebd5 0%, #ACB6E5 100%);
+  min-height: 100vh;
+  font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  max-width: 480px;
+  margin: 3rem auto;
+  padding: 2rem;
+  text-align: center;
+  background: rgba(255,255,255,0.85);
+  border-radius: 1.5rem;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.18);
+}
+
+.logo {
+  height: 5em;
+  margin-bottom: 1em;
+  transition: transform 0.3s, filter 0.3s;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #74ebd5aa);
+  transform: scale(1.08) rotate(-3deg);
+}
+
+.card {
+  background: #f7fafc;
+  border-radius: 1rem;
+  padding: 2em 1.5em;
+  margin: 1.5em 0;
+  box-shadow: 0 2px 8px rgba(44, 62, 80, 0.08);
+  transition: box-shadow 0.2s;
+}
+.card:hover {
+  box-shadow: 0 4px 16px rgba(44, 62, 80, 0.16);
+}
+
+.weather-info {
+  font-size: 1.2rem;
+  color: #222;
+  margin-bottom: 1em;
+}
+
+.weather-temp {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #0077b6;
+  margin-bottom: 0.5em;
+}
+
+.weather-desc {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 1em;
+  text-transform: capitalize;
+}
+
+input[type="text"], .search-bar {
+  padding: 0.8em 1em;
+  border-radius: 2em;
+  border: 1px solid #b0bec5;
+  outline: none;
+  font-size: 1rem;
+  margin-bottom: 1em;
+  width: 80%;
+  max-width: 300px;
+  transition: border 0.2s;
+}
+input[type="text"]:focus, .search-bar:focus {
+  border: 1.5px solid #0077b6;
+}
+
+button, .search-btn {
+  background: linear-gradient(90deg, #0077b6 0%, #00b4d8 100%);
+  color: #fff;
+  border: none;
+  border-radius: 2em;
+  padding: 0.7em 2em;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 0.5em;
+  transition: background 0.2s, transform 0.2s;
+}
+button:hover, .search-btn:hover {
+  background: linear-gradient(90deg, #00b4d8 0%, #0077b6 100%);
+  transform: translateY(-2px) scale(1.04);
+}
+
+.read-the-docs {
+  color: #888;
+  font-size: 0.95rem;
+  margin-top: 2em;
+}
+
+@media (max-width: 600px) {
+  #root {
+    padding: 1rem;
+    max-width: 98vw;
+  }
+  .card {
+    padding: 1em 0.5em;
+  }
+  input[type="text"], .search-bar {
+    width: 95%;
+  }
+}
+
+.widget-card {
+  background: linear-gradient(120deg, #e0eafc 0%, #cfdef3 100%);
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 24px rgba(44, 62, 80, 0.10);
+  padding: 2rem 1.5rem;
+  margin: 2rem auto;
+  max-width: 340px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: box-shadow 0.2s;
+}
+
+.widget-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.widget-city {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.widget-icon {
+  width: 64px;
+  height: 64px;
+}
+
+.widget-temp {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #0077b6;
+  margin: 0.5rem 0;
+}
+
+.widget-desc {
+  font-size: 1.1rem;
+  color: #555;
+  text-transform: capitalize;
+  margin-bottom: 1rem;
+}
+
+.widget-details {
+  display: flex;
+  gap: 1.5rem;
+  font-size: 1rem;
+  color: #333;
+}
+
+.widget-placeholder {
+  color: #888;
+  font-size: 1.1rem;
+  text-align: center;
+}
